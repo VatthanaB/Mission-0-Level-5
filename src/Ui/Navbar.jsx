@@ -12,7 +12,7 @@ export default function MainNavigation() {
 
   // Update card properties based on screen size (responsive) using useScreenSize custom hook
   useEffect(() => {
-    if (screenSize.width < 770) {
+    if (screenSize.width < 800) {
       setIsMobile(true);
       setScrollUp(false);
     } else {
