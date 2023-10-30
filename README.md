@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to **My Mission 0**!
+Welcome to **My Mission 0**! This is an app to get acces to more learning contents. For mission ready students.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ Welcome to **My Mission 0**!
 
 ## Installation
 
-To get started with **Your App Name**, follow these steps:
+To get started with **My mission 0**, follow these steps:
 
 1. Clone the repository:
 
