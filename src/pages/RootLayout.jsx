@@ -7,7 +7,7 @@ export default function RootLayout() {
     <>
       <Navbar />
       <main>
-        {/* {navigation.state === 'loading' && <p>Loading...</p>} */}
+        {/* display any children routes here using react router dom with Outlet */}
         <Outlet />
       </main>
     </>

@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 
+// Hook to get the screen size
 const useScreenSize = () => {
   const [screenSize, setScreenSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
 
+  // Add event listener to update the screen size when the window is resized
   useEffect(() => {
     const handleResize = () => {
       setScreenSize({

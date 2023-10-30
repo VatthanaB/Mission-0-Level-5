@@ -15,6 +15,7 @@ export default function MediaCard(props) {
   const [textFontSize, setTextFontSize] = useState(14);
   const [titleFontSize, setTitleFontSize] = useState("h5");
 
+  // Update card properties based on screen size (responsive) using useScreenSize custom hook
   const screenSize = useScreenSize();
   useEffect(() => {
     if (screenSize.width < 350) {

@@ -4,10 +4,13 @@ import styles from "./Navbar.module.css";
 import useScreenSize from "../hooks/useScreenSize";
 
 export default function MainNavigation() {
+  // create all my states to handle responsive design
   const [isMobile, setIsMobile] = useState(false);
   const screenSize = useScreenSize();
   const [showMenu, setShowMenu] = useState(false);
   const [scrollUp, setScrollUp] = useState(false);
+
+  // Update card properties based on screen size (responsive) using useScreenSize custom hook
   useEffect(() => {
     if (screenSize.width < 770) {
       setIsMobile(true);
@@ -30,6 +33,7 @@ export default function MainNavigation() {
   };
   return (
     <nav className={styles.navbar}>
+      {/* LEFT PART OF NAVBAR */}
       <div className={styles.left_div}>
         {" "}
         <Link to="/">
@@ -42,6 +46,8 @@ export default function MainNavigation() {
           Learning Center
         </Link>
       </div>
+      {/* RIGHT PART OF NAVBAR WITH LINKS  */}
+      {/* REGULAR NAVBAR */}
       {!isMobile && (
         <ul className={styles.ul}>
           <NavLink
@@ -82,6 +88,7 @@ export default function MainNavigation() {
           </NavLink>
         </ul>
       )}
+      {/* NAVBAR WITH HAMBURGER MENU */}
       {isMobile && (
         <button onClick={toggleMenu} className={styles.hamburger_button}>
           <i class="fa-solid fa-bars"></i>

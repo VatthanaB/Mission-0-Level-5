@@ -5,13 +5,15 @@ import Card from "../Ui/Card";
 
 export default function Homepage() {
   return (
-    <div>
+    <>
+      {/* TOP DIV  */}
       <div className={styles.main_top_div}>
         <h2>Extra Learning Resources </h2>
         <div className={styles.search_bar}>
           <SearchBar />
         </div>
       </div>
+      {/* BOTTOM DIV WITH 3 CARDS */}
       <div className={styles.grid_div}>
         <Card
           title="React"
@@ -29,6 +31,6 @@ export default function Homepage() {
           text="CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed."
         />
       </div>
-    </div>
+    </>
   );
 }
