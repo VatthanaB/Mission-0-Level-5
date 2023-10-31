@@ -1,0 +1,40 @@
+/* Footer.css */
+
+.footer {
+  background-color: rgb(34, 3, 44);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.footer_links a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo img {
+  width: 150px; /* Adjust the width as needed */
+  margin-right: 10px;
+}
+
+.footer_contact a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer_copyright {
+  align-self: center;
+  margin: 0 auto;
+}

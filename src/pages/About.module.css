@@ -1,0 +1,26 @@
+.main_div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 90vh;
+  padding-left: 30px;
+  padding-top: 20px;
+  background: linear-gradient(to BOTTOM, #9b51e0, rgb(80, 24, 99));
+  color: white;
+}
+
+.main_div h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main_div p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.underline {
+  text-decoration: underline;
+}
