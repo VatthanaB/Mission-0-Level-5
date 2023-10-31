@@ -1,7 +1,7 @@
 /* Footer.css */
 
 .footer {
-  background-color: rgb(34, 3, 44);
+  background: linear-gradient(to BOTTOM, rgb(80, 24, 99), rgb(0, 0, 0) 100%);
   color: white;
 
   display: flex;
