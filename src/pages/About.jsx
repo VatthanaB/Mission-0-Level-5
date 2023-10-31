@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className={styles.main_div}>
       <h2>About Mission Ready HQ Extra Resources</h2>
-      <p>
+      <p className={styles.first_p}>
         Welcome to Mission Ready HQ Extra Resources, your gateway to continuous
         learning and growth. We are here to provide Mission Ready HQ students
         with supplementary materials, videos, and links to enhance your

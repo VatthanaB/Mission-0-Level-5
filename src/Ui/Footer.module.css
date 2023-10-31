@@ -38,3 +38,34 @@
   align-self: center;
   margin: 0 auto;
 }
+
+@media (max-width: 500px) {
+  .footer_content {
+    justify-content: flex-start;
+  }
+  .footer_logo img {
+    margin-bottom: 20px;
+    position: relative !important;
+    left: 250px !important;
+    top: -250px !important;
+  }
+  .footer_links {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer_contact a {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .footer_logo img {
+    left: 200px !important;
+  }
+  @media (max-width: 330px) {
+    .footer_logo img {
+      width: 120px;
+      left: 160px !important;
+    }
+  }
+}

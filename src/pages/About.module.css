@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 90vh;
+  min-height: 90vh;
   padding-left: 30px;
   padding-top: 20px;
   background: linear-gradient(to BOTTOM, #9b51e0, rgb(80, 24, 99));
@@ -20,7 +20,28 @@
   font-size: 1rem;
   font-weight: 600;
 }
+.first_p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .underline {
   text-decoration: underline;
+}
+@media (max-width: 426px) {
+  .main_div h2 {
+    font-size: 2rem;
+  }
+  .main_div p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .main_div h2 {
+    font-size: 1.5rem;
+  }
+  .main_div p {
+    font-size: 0.7rem;
+  }
 }

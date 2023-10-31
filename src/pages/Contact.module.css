@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 90vh;
+  min-height: 90vh;
   padding-left: 30px;
 
   background: linear-gradient(to BOTTOM, #9b51e0, rgb(80, 24, 99));
