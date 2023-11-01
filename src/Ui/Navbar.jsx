@@ -31,6 +31,7 @@ export default function MainNavigation() {
       setScrollUp(false);
     }
   };
+
   return (
     <nav className={styles.navbar}>
       {/* LEFT PART OF NAVBAR */}

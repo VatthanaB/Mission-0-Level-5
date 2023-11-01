@@ -83,6 +83,7 @@
   text-decoration: none;
 }
 
+/* MOBILE VERSION */
 .hamburger_button {
   border: none;
   background-color: transparent;
@@ -130,6 +131,8 @@
   /* When menu is inactive scroll back to top */
   .dropdown_container_off {
     position: absolute !important;
+    top: 0% !important;
+    left: 0%;
 
     z-index: 1;
     width: 100vw;
