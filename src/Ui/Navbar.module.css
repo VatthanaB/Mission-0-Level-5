@@ -29,6 +29,8 @@
   display: flex;
   align-items: center;
 }
+
+/* DESKTOP VERSION 🔥  */
 .navbar a {
   color: white;
   font-weight: 700;
@@ -83,7 +85,7 @@
   text-decoration: none;
 }
 
-/* MOBILE VERSION */
+/* MOBILE VERSION 🔥  */
 .hamburger_button {
   border: none;
   background-color: transparent;
@@ -110,7 +112,7 @@
   .navbar {
     padding: 5px 0px 5px 10px;
   }
-  /* when menu icon is clicked scroll to bottom  */
+  /* when menu icon is clicked scroll to bottom 🔥  */
   .dropdown_container {
     position: absolute !important;
     top: 0% !important;
@@ -128,7 +130,7 @@
       transform: translateY(0vh);
     }
   }
-  /* When menu is inactive scroll back to top */
+  /* When menu is inactive scroll back to top 🔥 */
   .dropdown_container_off {
     position: absolute !important;
     top: 0% !important;

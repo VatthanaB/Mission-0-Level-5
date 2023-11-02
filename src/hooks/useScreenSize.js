@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 // Hook to get the screen size
 const useScreenSize = () => {
+  // Set the initial screen size state to the current window size on load (in pixels) 🔥
+  // this state will be the return value of the hook 🔥
   const [screenSize, setScreenSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,

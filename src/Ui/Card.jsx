@@ -9,44 +9,39 @@ import Typography from "@mui/material/Typography";
 import useScreenSize from "../hooks/useScreenSize";
 
 export default function MediaCard(props) {
-  const [cardWidth, setcardWidth] = useState(450);
   const [picSize, setpicSize] = useState(160);
   const [text, setText] = useState(props.text);
   const [textFontSize, setTextFontSize] = useState(14);
-  const [titleFontSize, setTitleFontSize] = useState("h5");
 
   // Update card properties based on screen size (responsive) using useScreenSize custom hook
   const screenSize = useScreenSize();
+
+  // use Effect to update card properties from MUI based on screen size 🔥
   useEffect(() => {
     if (screenSize.width < 350) {
-      setcardWidth(300);
       setpicSize(150);
       setText(props.text.split(" ").slice(0, 10).join(" ") + "...");
       setTextFontSize(10);
     } else if (screenSize.width < 450) {
-      setcardWidth(300);
       //   props.text only 20 first words then ...
       setText(props.text.split(" ").slice(0, 10).join(" ") + "...");
       setTextFontSize(14);
     } else if (screenSize.width < 769) {
       setpicSize(200);
-      setcardWidth(500);
+
       setText(props.text.split(" ").slice(0, 25).join(" ") + "...");
       setTextFontSize(14);
     } else {
-      setcardWidth(450);
       setpicSize(160);
       setText(props.text.split(" ").slice(0, 35).join(" ") + "...");
       setTextFontSize(14);
     }
   }, [screenSize]);
 
-  //   const picSize = isTablet ? 140 : 160;
-  //   const cardWidth = isTablet ? 600 : 400;
-
   return (
     <Card sx={{ maxWidth: "80%" }}>
       <CardMedia
+        // dynamic card rendering based on props & screen size 🔥
         sx={{ height: picSize }}
         image={props.image}
         title={props.title}
@@ -61,6 +56,7 @@ export default function MediaCard(props) {
           {props.title}
         </Typography>
         <Typography
+          // dynamic card rendering based on screen size 🔥
           fontSize={textFontSize}
           variant="body2"
           color="text.secondary"

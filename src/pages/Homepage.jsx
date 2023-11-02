@@ -14,7 +14,9 @@ export default function Homepage() {
         </div>
       </div>
       {/* BOTTOM DIV WITH 3 CARDS */}
+
       <div className={styles.grid_div}>
+        {/* CARD FROM MUI , DATA PASS ON WITH PROPS FOR EVENTUAL DYNAMIC RENDER ex.(MAP) */}
         <Card
           title="React"
           image="https://kinsta.com/wp-content/uploads/2023/04/react-must-be-in-scope-when-using-jsx.jpg"
